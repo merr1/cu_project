@@ -1,0 +1,103 @@
+<!-- </div>
+<!-- SIDE MENU END -->
+
+<script>
+  // Initialize and add the map
+  function initMap() {
+    // The location of Uluru,
+    var uluru = { lat: 41.706889, lng: 44.811064 };
+    // The map, centered at Uluru
+    var map = new google.maps.Map(document.getElementById("map-canvas"), {
+      zoom: 14,
+      center: uluru,
+    });
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+      icon: "http://ips.cu.edu.ge/img/marker.svg",
+    });
+  }
+</script>
+
+<!-- google maps api -->
+<script
+  async
+  defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAazOnJgj9Ccp0Bid45k357deok4NswACE&callback=initMap&language=ka"
+></script>
+
+<div class="kf_location_wrap">
+  <div id="map-canvas" class="map-canvas"></div>
+</div>
+
+<!--Content Wrap Start-->
+<div class="">
+  <!--ABOUT UNIVERSITY START-->
+  <section>
+    <div class="container">
+      <!--CONTACT HEADING END-->
+      <div class="contct_wrap">
+        <div class="row">
+          <div class="col-md-7">
+            <form action="">
+              <input
+                type="hidden"
+                name="_token"
+                value="xcvgfwIxoSzmaYlCusHzd5QpoxHWtVXnnc6CjlYc"
+              />
+              <div class="contact_des">
+                <h4>მოგვწერეთ</h4>
+                <div class="inputs_des des_2">
+                  <input type="text" placeholder="სახელი" required /><i
+                    class="fa fa-user"
+                  ></i>
+                </div>
+
+                <div class="inputs_des des_2">
+                  <input type="text" placeholder="E-mail" required />
+                  <i class="fa fa-envelope-o"></i>
+                </div>
+                <div class="inputs_des des_2">
+                  <input type="text" placeholder="ტელეფონი" />
+                  <i class="fa fa-phone"></i>
+                </div>
+                <div class="inputs_des des_3">
+                  <textarea name="text" required></textarea>
+                  <i class="fa fa-comments-o"></i>
+                </div>
+                <div class="inputs_des des_2">
+                  <button type="submit">გაგზავნა</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-5">
+            <div class="contact_heading">
+              <h4>საკონტაქტო ინფორმაცია</h4>
+            </div>
+            <ul class="contact_meta">
+              <li>
+                <i class="fa fa-fw fa-home"></i>პაატა სააკაძის ქ. 1, ქ.თბილისი
+                0102, საქართველო
+              </li>
+              <li>
+                <i class="fa fa-fw fa-phone"></i
+                ><a href="#">(+995 32) 2 37 77 77</a>
+              </li>
+              <li>
+                <i class="fa fa-fw fa-envelope-o"></i
+                ><a href="#" style="text-transform: initial">ips@cu.edu.ge</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--ABOUT UNIVERSITY END-->
+</div>
+<!--Content Wrap Start END-->
+
+-->

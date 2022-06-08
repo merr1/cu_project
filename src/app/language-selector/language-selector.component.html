@@ -1,0 +1,7 @@
+<select
+  class="costum-select"
+  (change)="changeLanguage($any($event.target).value)"
+>
+  <option value="en" [selected]="lang == 'en'">english</option>
+  <option value="ge" [selected]="lang == 'ge'">ქართული</option>
+</select>
